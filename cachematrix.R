@@ -2,6 +2,9 @@
 
 ## Modeled from Programming Assignment 2 makeVector()
 
+## makeCacheMatrix creates a cached matrix and provides set, get
+## and inverse functions
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function (y) {
@@ -18,7 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Assume matrix is always a square invertible matrix
+
+## cacheSolve returns the inverse of the matrix defined by
+## makeCachematrix
+## Assumes matrix is always a square invertible matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
